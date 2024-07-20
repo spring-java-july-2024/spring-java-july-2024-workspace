@@ -1,0 +1,27 @@
+package com.sample.spring_core_xml_project_demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.sample.spring_core_xml_project_demo.mybeans.Student;
+
+import ch.qos.logback.core.recovery.ResilientSyslogOutputStream;
+
+@SpringBootApplication
+public class SpringCoreXmlProjectDemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringCoreXmlProjectDemoApplication.class, args);
+		
+		// lets get started
+		Student student1 = new Student(101, "Harry Potter", 70);
+		System.out.println("student1 : " + student1);
+		
+		// lets start with spring core
+		// here we are creating a spring core container and we provide the xml bean configuration in the constructor
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("anyName.xml");
+		
+	}
+
+}

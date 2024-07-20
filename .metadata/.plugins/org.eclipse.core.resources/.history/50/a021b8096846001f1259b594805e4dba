@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+	<!-- here we configure our beans using the bean tag -->
+	<bean id="stud" class="com.sample.spring_core_xml_project_demo.mybeans.Student">
+		<constructor-arg name="studId" value="102"></constructor-arg>
+		<constructor-arg name="studId" value="102"></constructor-arg>
+		<constructor-arg name="studId" value="102"></constructor-arg>
+	</bean>
+
+</beans>

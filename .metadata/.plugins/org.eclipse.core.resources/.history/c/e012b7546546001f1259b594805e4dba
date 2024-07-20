@@ -1,0 +1,13 @@
+package com.sample.spring_core_xml_project_demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringCoreXmlProjectDemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringCoreXmlProjectDemoApplication.class, args);
+	}
+
+}
