@@ -1,0 +1,38 @@
+references
+
+	- https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
+	- https://docs.spring.io/spring-framework/reference/index.html
+	- https://docs.spring.io/spring-framework/reference/core/beans.html
+	- https://docs.spring.io/spring-framework/reference/core/beans/basics.html
+	- https://docs.spring.io/spring-framework/reference/core/beans/annotation-config.html
+	- https://docs.spring.io/spring-framework/reference/core/beans/java.html
+
+	- https://docs.spring.io/spring-framework/reference/web/webmvc.html
+	- https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html
+
+Spring core
+	- IOC
+	- DI
+configuration of the beans can be done in 3 ways
+	- xml based configuration
+	- annotation based configuration
+	- java based configuration
+
+what type of project we need?
+	- maven project ( the main reason is to manage our jar files)
+	- and we will use spring initializer website to create this spring boot maven project
+	- and then download and import this project into eclipse
+
+spring mvc or spring web mvc
+M - Model
+	- the data that you hold in your web application
+	- we use a POJO(Plain Old Java Object)
+	- also known as DO(Data Object), TO(Transfer Object), VO(Value Object)
+V - View
+	- UI of the web application
+	- we do input and output here
+	- we use HTML and JSP
+C - Controller
+	- manager of the web application
+	- we use Servlet
