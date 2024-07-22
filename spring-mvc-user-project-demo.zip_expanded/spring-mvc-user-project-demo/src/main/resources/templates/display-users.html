@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Data</title>
+</head>
+<body>
+<h2>List of Users</h2>
+<table border="1">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>City</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="user : ${all_users}"> <!--a typical for loop in thymeleaf-->
+			<td th:text="${user.userId}"></td>
+			<td th:text="${user.userName}"></td>
+			<td th:text="${user.userCity}"></td>
+		</tr>
+	</tbody>
+</table>
+	
+</body>
+</html>

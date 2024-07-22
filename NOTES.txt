@@ -1,4 +1,5 @@
 references
+-----------
 
 	- https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
@@ -11,28 +12,55 @@ references
 	- https://docs.spring.io/spring-framework/reference/web/webmvc.html
 	- https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html
 
+we will cover
+-------------
+	- spring core
+	- spring mvc
+	- spring boot
+	- spring data jpa with hibernate
+	- spring rest api
+
 Spring core
+-----------
 	- IOC
 	- DI
-configuration of the beans can be done in 3 ways
+   - configuration of the beans can be done in 3 ways
+    --------------------------------------------------
 	- xml based configuration
 	- annotation based configuration
 	- java based configuration
 
-what type of project we need?
-	- maven project ( the main reason is to manage our jar files)
+   - what type of project we need?
+    ------------------------------
+	- spring boot project with maven ( the main reason is to manage our jar files)
 	- and we will use spring initializer website to create this spring boot maven project
 	- and then download and import this project into eclipse
 
 spring mvc or spring web mvc
+----------------------------
+	- here we are creating web applications
+	- a web application is a group of web pages
+	- this web page can be a static page(HTML) or a dynamic page(HTML with JSP(Java Server Pages) or Thymeleaf)
+	- this web application which we create has to be deployed in a web server(Tomcat)
+	- who is the client? - browser
+	- it follows a client server architecture - a client send a request to the server. The server process the request and sends a response back to the client.
+
+	- what type of project we need?
+		- spring boot project with maven
+		- we will ad the spring starter web dependency to the spring boot project
+		- by adding this dependency we can work with spring mvc, spring rest api and also an embedded tomcat server
+		- as usual use spring intilizer, download the project and import in eclipse
 M - Model
 	- the data that you hold in your web application
 	- we use a POJO(Plain Old Java Object)
 	- also known as DO(Data Object), TO(Transfer Object), VO(Value Object)
 V - View
-	- UI of the web application
+	- UI of the web application which means the web page
 	- we do input and output here
-	- we use HTML and JSP
+	- we use HTML and JSP or thymeleaf
 C - Controller
 	- manager of the web application
 	- we use Servlet
+
+spring boot
+-----------
