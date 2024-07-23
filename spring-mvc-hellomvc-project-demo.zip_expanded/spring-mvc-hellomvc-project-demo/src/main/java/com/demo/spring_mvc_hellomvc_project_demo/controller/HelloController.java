@@ -18,7 +18,7 @@ public class HelloController {
 	@GetMapping("/hello")
 	public String sayHello() {
 		System.out.println("hello");
-		return "hello-view"; //  here hello-view is the name of the web page that we want to return back to the client
+		return "hello-view"; //  here hello-view is the name of the view that we want to return back to the client
 	}
 	
 }

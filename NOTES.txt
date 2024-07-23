@@ -1,16 +1,19 @@
 references
 -----------
-
+    maven
 	- https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
+    spring core
 	- https://docs.spring.io/spring-framework/reference/index.html
 	- https://docs.spring.io/spring-framework/reference/core/beans.html
 	- https://docs.spring.io/spring-framework/reference/core/beans/basics.html
 	- https://docs.spring.io/spring-framework/reference/core/beans/annotation-config.html
 	- https://docs.spring.io/spring-framework/reference/core/beans/java.html
 
+   spring mvc
 	- https://docs.spring.io/spring-framework/reference/web/webmvc.html
 	- https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html
+
 
 we will cover
 -------------
@@ -64,3 +67,21 @@ C - Controller
 
 spring boot
 -----------
+	- quickly created a project using spring initializer
+	- auto configuration
+	- production ready project - profiles for different environment, actuators to monitor the project performance, logging etc
+
+
+project
+-------
+	- 3 layered project
+	- the request comes to the controller, then the controller calls the service, then service calls the dao, then the dao interacts with the DB
+	- and dao returns data to the service, service returns that data to the controller and the controller send the data to the view which will rendered and returned back
+	- the 3 layers are
+		- controller
+			- manager
+			- has the request handler methods
+		- service
+			- here we write the business logic 
+		- dao (Data Access Object)
+			- here we write the Database interactions
