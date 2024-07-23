@@ -14,6 +14,11 @@ references
 	- https://docs.spring.io/spring-framework/reference/web/webmvc.html
 	- https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html
 
+   spring rest
+	- https://spring.io/guides/tutorials/rest
+
+   spring boot
+	- https://spring.io/projects/spring-boot
 
 we will cover
 -------------
@@ -22,6 +27,7 @@ we will cover
 	- spring boot
 	- spring data jpa with hibernate
 	- spring rest api
+	- mongodb
 
 Spring core
 -----------
@@ -85,3 +91,40 @@ project
 			- here we write the business logic 
 		- dao (Data Access Object)
 			- here we write the Database interactions
+
+spring rest api
+---------------
+	- we create REST web service
+	- we create a backend application for a full stack application using spring rest api
+	- who is the client? - the front end application
+	- do we have the front end application? no, so we use some tools as client to test the endpoints created by our spring rest backend application
+	- what are those tools to test the endpoints?
+		- Postman
+		- swagger
+		- thunder client
+		
+
+a request contains 2 parts - request header and request body
+a response contains 2 parts - response header and response body
+
+
+h2 Database
+-----------
+	- a relational database software
+	- in memory database software
+	- we can add this database a maven dependency to our spring boot project
+
+ORM/Hibnernate/JPA
+------------------
+	- dao layer uses hibernate with JPA
+	- ORM : Object Relational Mapping
+		- ORM is a concept
+	- JPA : Jakarta Persistence API
+		- a specification for ORM
+	- Hibernate
+		- is a ORM framework
+	
+	- here an entity class/object is mapped to a relation in the Database
+
+
+spring data JPA
