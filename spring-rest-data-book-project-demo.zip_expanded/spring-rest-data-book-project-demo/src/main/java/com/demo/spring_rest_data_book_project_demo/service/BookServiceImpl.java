@@ -17,27 +17,31 @@ public class BookServiceImpl implements BookService{
 	
 	@Override
 	public List<BookEntity> fetchAllBooks() {
-		return bookDao.fetchAllBooks();
+		//return bookDao.fetchAllBooks();
+		return bookDao.findAll();
 	}
 
 	@Override
 	public BookEntity addBook(BookEntity newBook) {
-		return bookDao.addBook(newBook);
+		//return bookDao.addBook(newBook);
+		return bookDao.saveAndFlush(newBook);
 	}
 
 	@Override
 	public BookEntity updateBook(BookEntity updateBook) {
-		return bookDao.updateBook(updateBook);
+		//return bookDao.updateBook(updateBook);
+		return bookDao.saveAndFlush(updateBook);
 	}
 
 	@Override
 	public void deleteBook(int bookId) {
-		bookDao.deleteBook(bookId);
+		//bookDao.deleteBook(bookId);
+		bookDao.deleteById(bookId);
 	}
 
 	@Override
 	public BookEntity fetchABook(int bookId) {
-		return bookDao.fetchABook(bookId);
+		//return bookDao.fetchABook(bookId);
+		return bookDao.findById(bookId).get();
 	}
-
 }

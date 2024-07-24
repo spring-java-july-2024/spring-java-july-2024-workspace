@@ -2,6 +2,8 @@ package com.demo.spring_rest_data_book_project_demo.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -18,6 +20,7 @@ public class BookEntity {
 	
 	@Id
 	@Column(name="book_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int bookId;
 	
 	@Column(name="book_title")

@@ -126,5 +126,13 @@ ORM/Hibnernate/JPA
 	
 	- here an entity class/object is mapped to a relation in the Database
 
+association mapping
+	- one to one
+	- one to many
+	- many to one
+	- many to many
+
+from author to book the relation is one to many
+from book to author the relation is many to one
 
 spring data JPA

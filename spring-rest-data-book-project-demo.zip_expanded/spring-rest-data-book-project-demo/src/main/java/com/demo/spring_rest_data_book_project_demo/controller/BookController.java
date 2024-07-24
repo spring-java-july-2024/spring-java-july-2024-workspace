@@ -3,6 +3,8 @@ package com.demo.spring_rest_data_book_project_demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,8 +32,9 @@ public class BookController {
 	
 	// localhost:8080/api/books/203
 	@GetMapping("/books/{bookId}")
-	public BookEntity fetchABook(@PathVariable("bookId") int bid) {
-		return bookService.fetchABook(bid);
+	public ResponseEntity<BookEntity> fetchABook(@PathVariable("bookId") int bid) {
+		BookEntity book = bookService.fetchABook(bid); 
+		return ResponseEntity.ok(book);
 	}
 	
 	// localhost:8080/api/books/202
